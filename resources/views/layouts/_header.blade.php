@@ -11,9 +11,12 @@
             </button>
 
             <!-- Branding Image -->
-            <a class="navbar-brand" href="{{ url('/') }}">
+            <span class="navbar-brand"><img src="{{config('app.url')}}/logo.png" alt="logo" style="width: 60px; position: relative; top:-15px"></span>
+            <span>
+              <a class="navbar-brand" href="{{ url('/') }}">
                 辉昂管业
-            </a>
+              </a>
+          </span>
         </div>
 
         <div class="collapse navbar-collapse" id="app-navbar-collapse">
