@@ -12,18 +12,23 @@
 
             <!-- Branding Image -->
             <a class="navbar-brand" href="{{ url('/') }}">
-                LaraBBS
+                辉昂管业
             </a>
         </div>
 
         <div class="collapse navbar-collapse" id="app-navbar-collapse">
             <!-- Left Side Of Navbar -->
             <ul class="nav navbar-nav">
-                <li class="{{ active_class(if_route('topics.index')) }}"><a href="{{ route('topics.index') }}">话题</a></li>
-                <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 1))) }}"><a href="{{ route('categories.show', 1) }}">分享</a></li>
-                <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 2))) }}"><a href="{{ route('categories.show', 2) }}">教程</a></li>
-                <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 3))) }}"><a href="{{ route('categories.show', 3) }}">问答</a></li>
-                <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 4))) }}"><a href="{{ route('categories.show', 4) }}">公告</a></li>
+                <li class="{{ active_class(if_route('root')) }}"><a href="{{ url('/') }}">公司简介</a></li>
+                <li class="{{ active_class(if_route('topics.index')) }}"><a href="{{ route('topics.index') }}">所有产品</a></li>
+                <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 1))) }}"><a href="{{ route('categories.show', 1) }}">吊环</a></li>
+                <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 2))) }}"><a href="{{ route('categories.show', 2) }}">油封座</a></li>
+                <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 3))) }}"><a href="{{ route('categories.show', 3) }}">螺母体</a></li>
+                <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 4))) }}"><a href="{{ route('categories.show', 4) }}">限位块</a></li>
+                <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 5))) }}"><a href="{{ route('categories.show', 5) }}">套管</a></li>
+                <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 6))) }}"><a href="{{ route('categories.show', 6) }}">螺栓</a></li>
+                <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 7))) }}"><a href="{{ route('categories.show', 7) }}">吊环总成</a></li>
+                <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 8))) }}"><a href="{{ route('categories.show', 8) }}">螺母体总成</a></li>
             </ul>
 
             <!-- Right Side Of Navbar -->
@@ -34,11 +39,13 @@
                     <li><a href="{{ route('login') }}">登录</a></li>
                     <li><a href="{{ route('register') }}">注册</a></li>
                 @else
+                    @can('manage_contents')
                     <li>
                         <a href="{{ route('topics.create') }}">
                             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                         </a>
                     </li>
+                    @endcan
                     {{-- 消息通知标记 --}}
                     <li>
                         <a href="{{ route('notifications.index') }}" class="notifications-badge" style="margin-top: -2px;">

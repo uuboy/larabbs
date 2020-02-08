@@ -10,20 +10,36 @@ class SeedCategoriesData extends Migration
     {
         $categories = [
             [
-                'name'        => '分享',
-                'description' => '分享创造，分享发现',
+                'name'        => '吊环',
+                'description' => 'ring',
             ],
             [
-                'name'        => '教程',
-                'description' => '开发技巧、推荐扩展包等',
+                'name'        => '油封座',
+                'description' => 'Oil seat',
             ],
             [
-                'name'        => '问答',
-                'description' => '请保持友善，互帮互助',
+                'name'        => '螺母体',
+                'description' => 'Spiral',
             ],
             [
-                'name'        => '公告',
-                'description' => '站点公告',
+                'name'        => '限位块',
+                'description' => 'Limit Block',
+            ],
+            [
+                'name'        => '套管',
+                'description' => 'bush',
+            ],
+            [
+                'name'        => '螺栓',
+                'description' => 'bolt',
+            ],
+            [
+                'name'        => '吊环总成',
+                'description' => 'Ring Assembly',
+            ],
+            [
+                'name'        => '螺母体总成',
+                'description' => 'Screw matrix assembly',
             ],
         ];
 

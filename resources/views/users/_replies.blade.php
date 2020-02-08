@@ -12,7 +12,7 @@
             </div>
 
             <div class="meta">
-                <span class="glyphicon glyphicon-time" aria-hidden="true"></span> 回复于 {{ $reply->created_at->diffForHumans() }}
+                <span class="glyphicon glyphicon-time" aria-hidden="true"></span> 评论于 {{ $reply->created_at->diffForHumans() }}
             </div>
         </li>
     @endforeach

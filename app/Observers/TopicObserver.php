@@ -33,4 +33,5 @@ class TopicObserver
     {
         \DB::table('replies')->where('topic_id', $topic->id)->delete();
     }
+
 }

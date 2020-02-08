@@ -4,6 +4,7 @@ namespace App\Policies;
 
 use App\Models\User;
 use App\Models\Topic;
+use Spatie\Permission\Models\Permission;
 
 class TopicPolicy extends Policy
 {
@@ -16,4 +17,10 @@ class TopicPolicy extends Policy
     {
         return $user->isAuthorOf($topic);
     }
+
+    public function create(User $user)
+    {
+        return false;
+    }
+
 }

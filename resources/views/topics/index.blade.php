@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', isset($category) ? $category->name : '话题列表')
+@section('title', isset($category) ? $category->name : '产品列表')
 
 @section('content')
 
@@ -9,7 +9,7 @@
 
         @if (isset($category))
             <div class="alert alert-info" role="alert">
-                {{ $category->name }} ：{{ $category->description }}
+                您现在看到的产品分类为{{ $category->name }} ({{ $category->description }})
             </div>
         @endif
 
@@ -17,7 +17,7 @@
 
             <div class="panel-heading">
                 <ul class="nav nav-pills">
-                    <li class="{{ active_class(( ! if_query('order', 'recent') )) }}"><a href="{{ Request::url() }}?order=default">最后回复</a></li>
+                    <li class="{{ active_class(( ! if_query('order', 'recent') )) }}"><a href="{{ Request::url() }}?order=default">最近更新</a></li>
                     <li class="{{ active_class(if_query('order', 'recent')) }}"><a href="{{ Request::url() }}?order=recent">最新发布</a></li>
                 </ul>
             </div>

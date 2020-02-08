@@ -10,9 +10,9 @@
                 <h2 class="text-center">
                     <i class="glyphicon glyphicon-edit"></i>
                     @if($topic->id)
-                        编辑话题
+                        编辑产品
                     @else
-                        新建话题
+                        新建产品
                     @endif
                 </h2>
 
@@ -21,21 +21,21 @@
                 @include('common.error')
 
                 @if($topic->id)
-                    <form action="{{ route('topics.update', $topic->id) }}" method="POST" accept-charset="UTF-8">
+                    <form action="{{ route('topics.update', $topic->id) }}" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
                         <input type="hidden" name="_method" value="PUT">
                 @else
-                    <form action="{{ route('topics.store') }}" method="POST" accept-charset="UTF-8">
+                    <form action="{{ route('topics.store') }}" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
                 @endif
 
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                     <div class="form-group">
-                        <input class="form-control" type="text" name="title" value="{{ old('title', $topic->title ) }}" placeholder="请填写标题" required/>
+                        <input class="form-control" type="text" name="title" value="{{ old('title', $topic->title ) }}" placeholder="请填写产品名称" required/>
                     </div>
 
                     <div class="form-group">
                         <select class="form-control" name="category_id" required>
-                            <option value="" hidden disabled {{ $topic->id ? '' : 'selected' }}>请选择分类</option>
+                            <option value="" hidden disabled {{ $topic->id ? '' : 'selected' }}>请选择产品分类</option>
                             @foreach ($categories as $value)
                                 <option value="{{ $value->id }}" {{ $topic->category_id == $value->id ? 'selected' : '' }}>{{ $value->name }}</option>
                             @endforeach
@@ -43,7 +43,17 @@
                     </div>
 
                     <div class="form-group">
-                        <textarea name="body" class="form-control" id="editor" rows="3" placeholder="请填入至少三个字符的内容。" required>{{ old('body', $topic->body ) }}</textarea>
+                        <textarea name="body" class="form-control" id="editor" rows="3" placeholder="请填写产品详情。" required>{{ old('body', $topic->body ) }}</textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="" class="cover-label">产品封面图</label>
+                        <input type="file" name="cover">
+
+                        @if($topic->cover)
+                            <br>
+                            <img class="thumbnail img-responsive" src="{{ $topic->cover }}" width="200" />
+                        @endif
                     </div>
 
                     <div class="well well-sm">

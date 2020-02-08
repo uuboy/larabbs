@@ -1,10 +1,12 @@
+@can('manage_contents')
 <div class="panel panel-default">
     <div class="panel-body">
         <a href="{{ route('topics.create') }}" class="btn btn-success btn-block" aria-label="Left Align">
-            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 新建帖子
+            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 新建产品
         </a>
     </div>
 </div>
+@endcan
 
 @if (count($active_users))
     <div class="panel panel-default">

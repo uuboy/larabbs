@@ -4,7 +4,7 @@ namespace App\Models;
 
 class Topic extends Model
 {
-    protected $fillable = ['title', 'body', 'category_id', 'excerpt', 'slug'];
+    protected $fillable = ['title', 'body', 'category_id', 'excerpt', 'slug' ,'cover'];
 
     public function replies()
     {
@@ -55,4 +55,10 @@ class Topic extends Model
     {
         return route('topics.show', array_merge([$this->id, $this->slug], $params));
     }
+
+    public function viewCountIncrement()
+    {
+        $this->increment('view_count', 1);
+    }
+
 }

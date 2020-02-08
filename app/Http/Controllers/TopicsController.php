@@ -21,7 +21,7 @@ class TopicsController extends Controller
 
 	public function index(Request $request, Topic $topic, User $user, Link $link)
     {
-        $topics = $topic->withOrder($request->order)->paginate(20);
+        $topics = $topic->withOrder($request->order)->paginate(16);
         $active_users = $user->getActiveUsers();
         $links = $link->getAllCached();
 
@@ -35,22 +35,34 @@ class TopicsController extends Controller
             return redirect($topic->link(), 301);
         }
 
+        $topic->viewCountIncrement();
+
         return view('topics.show', compact('topic'));
     }
 
     public function create(Topic $topic)
     {
+        $this->authorize('create',$topic);
         $categories = Category::all();
         return view('topics.create_and_edit', compact('topic', 'categories'));
     }
 
-    public function store(TopicRequest $request, Topic $topic)
+    public function store(TopicRequest $request, Topic $topic, ImageUploadHandler $uploader)
     {
-        $topic->fill($request->all());
+        $this->authorize('create',$topic);
+        $data = $request->all();
+
+        if ($request->cover) {
+            $result = $uploader->save($request->cover, 'cover', $topic->id, 362);
+            if ($result) {
+                $data['cover'] = $result['path'];
+            }
+        }
+        $topic->fill($data);
         $topic->user_id = Auth::id();
         $topic->save();
 
-        return redirect()->to($topic->link())->with('success', '成功创建主题！');
+        return redirect()->to($topic->link())->with('success', '成功创建产品！');
     }
 
 	public function edit(Topic $topic)
@@ -60,10 +72,17 @@ class TopicsController extends Controller
         return view('topics.create_and_edit', compact('topic', 'categories'));
     }
 
-	public function update(TopicRequest $request, Topic $topic)
+	public function update(TopicRequest $request, Topic $topic, ImageUploadHandler $uploader)
 	{
 		$this->authorize('update', $topic);
-		$topic->update($request->all());
+        $data = $request->all();
+        if ($request->cover) {
+            $result = $uploader->save($request->cover, 'cover', $topic->id, 362);
+            if ($result) {
+                $data['cover'] = $result['path'];
+            }
+        }
+		$topic->update($data);
 
 		return redirect()->to($topic->link())->with('success', '更新成功！');
 	}
