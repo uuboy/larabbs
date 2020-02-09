@@ -9,13 +9,13 @@
                                 <div class="topic-content">
                                     <div class="top">
                                         <a href="{{ route('topics.show',$topic->id) }}">
-                                          <div class="img"><img src="{{ $topic->cover }}" alt=""></div>
+                                          <div class="img-responsive img"><img src="{{ $topic->cover }}" alt=""></div>
                                           <div class="title">{{ $topic->title }}</div>
                                         </a>
                                     </div>
                                     <div class="bottom">
                                       <div class="view_count">点击数 ：<span>{{ $topic->view_count }}</span></div>
-                                      <div class="reply_count">评论数 ：<span>{{ $topic->reply_count }}</span></div>
+                                      <div class="reply_count">留言数 ：<span>{{ $topic->reply_count }}</span></div>
                                     </div>
                                     <div class="timeago">
                                         更新时间：{{ $topic->updated_at->diffForHumans() }}

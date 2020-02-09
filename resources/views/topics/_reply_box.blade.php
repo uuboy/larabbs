@@ -6,7 +6,7 @@
         <div class="form-group">
             <textarea class="form-control" rows="3" placeholder="分享你的想法或留下您的联系方式" name="content"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-share"></i> 评论</button>
+        <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-share"></i> 留言</button>
     </form>
 </div>
 <hr>

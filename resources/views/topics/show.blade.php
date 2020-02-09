@@ -52,8 +52,20 @@
         {{-- 用户回复列表 --}}
         <div class="panel panel-default topic-reply">
             <div class="panel-body">
-                @includeWhen(Auth::check(), 'topics._reply_box', ['topic' => $topic])
-                @include('topics._reply_list', ['replies' => $topic->replies()->with('user')->get()])
+                @guest
+                    如您对我们的产品感兴趣或有宝贵意见建议，请点击此处
+                    <a href="{{ route('register') }}">
+                      <button type="button" class="btn btn-success">注册</button>
+                    </a>
+                    或点击
+                    <a href="{{ route('login') }}">
+                      <button type="button" class="btn btn-primary">登陆</button>
+                    </a>
+                    留下您的联系方式，方便我们与您取得联系。
+                @else
+                  @includeWhen(Auth::check(), 'topics._reply_box', ['topic' => $topic])
+                  @include('topics._reply_list', ['replies' => $topic->replies()->with('user')->get()])
+                @endguest
             </div>
         </div>
     </div>
