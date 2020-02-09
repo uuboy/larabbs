@@ -29,9 +29,12 @@ class Topic extends Model
             case 'recent':
                 $query = $this->recent();
                 break;
+            case 'popular':
+                $query = $this->popular();
+                break;
 
             default:
-                $query = $this->recentReplied();
+                $query = $this->popular();
                 break;
         }
         // 预加载防止 N+1 问题
@@ -49,6 +52,12 @@ class Topic extends Model
     {
         // 按照创建时间排序
         return $query->orderBy('created_at', 'desc');
+    }
+
+    public function scopePopular($query)
+    {
+        // 按照创建时间排序
+        return $query->orderBy('view_count', 'desc');
     }
 
     public function link($params = [])
