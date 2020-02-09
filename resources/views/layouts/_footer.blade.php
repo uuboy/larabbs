@@ -7,6 +7,6 @@
             <a href="http://www.beian.miit.gov.cn">浙ICP备19040425号-1</a>
         </p>
 
-        <p class="pull-right"><a href="mailto:{{ setting('contact_email') }}">联系我们</a></p>
+        <p class="pull-right">联系电话：0574-88468758</p>
     </div>
 </footer>
