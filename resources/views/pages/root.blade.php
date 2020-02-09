@@ -26,11 +26,15 @@
           <div class="root_sub_row2">Main business products: auto shock absorber accessories</div>
         </div>
         <div class="root_row">
-          <div class="root_sub_row1">■吊环ring  ■套管bush ■油封座Oil seat  ■螺栓bolt
+          <div class="root_sub_row1">■吊环ring  ■套管bush ■油封座Oil seat
           </div>
         </div>
         <div class="root_row">
-          <div class="root_sub_row1">■螺母体Spiral  ■吊环总成Ring Assembly  ■限位块 Limit Block  ■螺母体总成Screw matrix assembly
+          <div class="root_sub_row1">■螺栓bolt ■螺母体Spiral  ■吊环总成Ring Assembly
+          </div>
+        </div>
+        <div class="root_row">
+          <div class="root_sub_row1">■限位块 Limit Block  ■螺母体总成Screw matrix assembly
           </div>
         </div>
         <div class="root_row">
@@ -42,8 +46,8 @@
           <div class="root_sub_row2">Sales: 40 million yuan</div>
         </div>
         <div class="root_row">
-          <div class="root_sub_row1">班制：1班制（7:30 ∽ 16：30） 中午午休60分钟</div>
-          <div class="root_sub_row2">Class system: 1 class system(7:30 <UNK> 16:30) 60 minutes lunch break at noon</div>
+          <div class="root_sub_row1">班制：1班制（7:30 ~ 16:30） 中午午休60分钟</div>
+          <div class="root_sub_row2">Class system: 1 class system(7:30 ~ 16:30) 60 minutes lunch break at noon</div>
         </div>
         <div class="root_row">
           <div class="root_sub_row1">所在地：浙江省宁波市鄞州区云龙镇石桥村太平桥</div>
