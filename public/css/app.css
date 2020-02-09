@@ -14473,6 +14473,7 @@ body {
 .categories-show-page .topics-list .topic-item .topic-content .top img,
 .root-page .topics-list .topic-item .topic-content .top img {
   width: 100%;
+  max-height: 80px;
 }
 
 .topics-index-page .topics-list .topic-item .topic-content .top a,
