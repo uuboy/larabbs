@@ -51,7 +51,7 @@
         </div>
       </div>
       <div class="root_img col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <img class="img-responsive" src="{{config('app.url')}}/hagy.png" alt="">
+        <img class="img-responsive" src="{{config('app.url')}}/hagy.jpg" alt="">
       </div>
     </div>
 
@@ -124,7 +124,7 @@
         </div>
       </div>
       <div class="root_img col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <img class="img-responsive" src="{{config('app.url')}}/root_pic_1.png" alt="">
+        <img class="img-responsive" src="{{config('app.url')}}/root_pic_1.jpg" alt="">
       </div>
     </div>
 
@@ -137,7 +137,7 @@
         </div>
       </div>
       <div class="root_img col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <img class="img-responsive" src="{{config('app.url')}}/root_pic_2.png" alt="">
+        <img class="img-responsive" src="{{config('app.url')}}/root_pic_2.jpg" alt="">
       </div>
     </div>
 
@@ -150,7 +150,7 @@
         </div>
       </div>
       <div class="root_img col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <img class="img-responsive" src="{{config('app.url')}}/root_pic_3.png" alt="">
+        <img class="img-responsive" src="{{config('app.url')}}/root_pic_3.jpg" alt="">
       </div>
     </div>
 
@@ -196,13 +196,13 @@
       </div>
       <div class="root_img col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <img class="img-responsive" src="{{config('app.url')}}/root_pic_4.png" alt="">
+            <img class="img-responsive" src="{{config('app.url')}}/root_pic_4.jpg" alt="">
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <img class="img-responsive" src="{{config('app.url')}}/root_pic_5.png" alt="">
+            <img class="img-responsive" src="{{config('app.url')}}/root_pic_5.jpg" alt="">
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <img class="img-responsive" src="{{config('app.url')}}/root_pic_6.png" alt="">
+            <img class="img-responsive" src="{{config('app.url')}}/root_pic_6.jpg" alt="">
           </div>
       </div>
     </div>
@@ -244,16 +244,16 @@
       </div>
       <div class="root_img col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-            <img class="img-responsive" src="{{config('app.url')}}/root_pic_7.png" alt="">
+            <img class="img-responsive" src="{{config('app.url')}}/root_pic_7.jpg" alt="">
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-            <img class="img-responsive" src="{{config('app.url')}}/root_pic_8.png" alt="">
+            <img class="img-responsive" src="{{config('app.url')}}/root_pic_8.jpg" alt="">
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-            <img class="img-responsive" src="{{config('app.url')}}/root_pic_9.png" alt="">
+            <img class="img-responsive" src="{{config('app.url')}}/root_pic_9.jpg" alt="">
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-            <img class="img-responsive" src="{{config('app.url')}}/root_pic_10.png" alt="">
+            <img class="img-responsive" src="{{config('app.url')}}/root_pic_10.jpg" alt="">
           </div>
       </div>
     </div>
@@ -287,13 +287,13 @@
       </div>
       <div class="root_img col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <img class="img-responsive" src="{{config('app.url')}}/root_pic_11.png" alt="">
+            <img class="img-responsive" src="{{config('app.url')}}/root_pic_11.jpg" alt="">
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <img class="img-responsive" src="{{config('app.url')}}/root_pic_12.png" alt="">
+            <img class="img-responsive" src="{{config('app.url')}}/root_pic_12.jpg" alt="">
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <img class="img-responsive" src="{{config('app.url')}}/root_pic_13.png" alt="">
+            <img class="img-responsive" src="{{config('app.url')}}/root_pic_13.jpg" alt="">
           </div>
       </div>
     </div>
@@ -307,7 +307,7 @@
         </div>
       </div>
       <div class="root_img col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <img class="img-responsive" src="{{config('app.url')}}/root_pic_14.png" alt="">
+        <img class="img-responsive" src="{{config('app.url')}}/root_pic_14.jpg" alt="">
       </div>
     </div>
 
@@ -320,7 +320,7 @@
         </div>
       </div>
       <div class="root_img col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <img class="img-responsive" src="{{config('app.url')}}/root_pic_15.png" alt="">
+        <img class="img-responsive" src="{{config('app.url')}}/root_pic_15.jpg" alt="">
       </div>
     </div>
 
@@ -333,8 +333,8 @@
         </div>
       </div>
       <div class="root_img col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <img class="img-responsive" src="{{config('app.url')}}/root_pic_16.png" alt="">
-        <img class="img-responsive" src="{{config('app.url')}}/root_pic_17.png" alt="">
+        <img class="img-responsive" src="{{config('app.url')}}/root_pic_16.jpg" alt="">
+        <img class="img-responsive" src="{{config('app.url')}}/root_pic_17.jpg" alt="">
       </div>
     </div>
 
