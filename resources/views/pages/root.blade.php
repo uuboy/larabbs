@@ -216,7 +216,7 @@
     <div class="panel-body">
       <div class="root_content col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="root_title">
-          主要生产设备Main production equipment
+          主要生产设备 Main production equipment
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
           <div class="root_row">
