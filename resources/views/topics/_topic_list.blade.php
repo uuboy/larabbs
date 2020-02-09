@@ -18,7 +18,7 @@
                                       <div class="reply_count">留言数 ：<span>{{ $topic->reply_count }}</span></div>
                                     </div>
                                     <div class="timeago">
-                                        更新时间：{{ $topic->updated_at->diffForHumans() }}
+                                        创建时间：{{ $topic->created_at->diffForHumans() }}
                                     </div>
                                 </div>
                             </div>
