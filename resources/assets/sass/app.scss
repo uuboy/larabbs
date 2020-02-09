@@ -168,7 +168,7 @@ body {
             padding: 5px;
             img {
               width: 100%;
-              max-height: 80px;
+              height: 100px;
             }
               a {
                   color: #111;
@@ -177,10 +177,11 @@ body {
                 color: #800;
               }
             .title {
+              height: 40px;
               font:16px bold;
               margin-top: 10px;
               line-height: 20px;
-              max-height: 60px;
+              max-height: 40px;
             }
           }
           .bottom {

@@ -14473,7 +14473,7 @@ body {
 .categories-show-page .topics-list .topic-item .topic-content .top img,
 .root-page .topics-list .topic-item .topic-content .top img {
   width: 100%;
-  max-height: 80px;
+  height: 100px;
 }
 
 .topics-index-page .topics-list .topic-item .topic-content .top a,
@@ -14491,10 +14491,11 @@ body {
 .topics-index-page .topics-list .topic-item .topic-content .top .title,
 .categories-show-page .topics-list .topic-item .topic-content .top .title,
 .root-page .topics-list .topic-item .topic-content .top .title {
+  height: 40px;
   font: 16px bold;
   margin-top: 10px;
   line-height: 20px;
-  max-height: 60px;
+  max-height: 40px;
 }
 
 .topics-index-page .topics-list .topic-item .topic-content .bottom,
