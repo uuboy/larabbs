@@ -64,7 +64,7 @@ class Kernel extends HttpKernel
             \RenatoMarinho\LaravelPageSpeed\Middleware\RemoveComments::class,
             \RenatoMarinho\LaravelPageSpeed\Middleware\TrimUrls::class,
             \RenatoMarinho\LaravelPageSpeed\Middleware\RemoveQuotes::class,
-            \RenatoMarinho\LaravelPageSpeed\Middleware\CollapseWhitespace::class,
+            // \RenatoMarinho\LaravelPageSpeed\Middleware\CollapseWhitespace::class,
         ],
 
         // API 中间件组，应用于 routes/api.php 路由文件
