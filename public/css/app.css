@@ -15005,6 +15005,12 @@ body {
   content: normal;
 }
 
+.topics-show-page img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .topics-show-page .panel {
   padding: 15px;
 }

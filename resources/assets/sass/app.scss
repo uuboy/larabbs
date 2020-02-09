@@ -221,7 +221,11 @@ body {
 @import "topic_body";
 
 .topics-show-page {
-
+    img {
+      display:block;
+      max-width:100%;
+      height:auto;
+    }
     .panel {
         padding: 15px;
 
